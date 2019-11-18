@@ -1,0 +1,192 @@
+/* Element styles ---------------------*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body,
+legend {
+    font-family: 'Merriweather', serif;
+    color: rgb(53,70,87);
+}
+
+.header h1,
+.newsletter {
+    text-align: center;
+}
+
+.header h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: rgb(53,70,87);
+    color:#ffffff;
+    font-size: 20px;
+    padding: 17px 0;
+}
+
+.newsletter {
+    margin-top: 70px;
+    border-bottom: 4px solid  rgb(53,70,87);
+    margin-bottom: 3px;
+
+}
+
+.newsletter h2 {
+    margin-bottom: 0;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.newsletter span {
+    display: inline-block;
+    margin-bottom:1.500em ;
+    color: slategray;
+}
+
+form {
+    border-top: 2px solid  rgb(53,70,87);
+    background-color: silver;
+}
+
+fieldset {
+    border: none;
+    margin: 20px 0;
+
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px 0;
+}
+
+.info {
+    border-bottom: 2px solid slategray;
+}
+.flex input,
+.flex select,
+.news textarea {
+    margin: 10px 0 20px;
+    border-style: solid;
+    border: solid 2px #e3e3e3;
+    border-radius: 3px;
+    background-color: #e3e3e3;
+    padding: 1em;
+    height: 45px;
+    width: 100%;
+    color: slategray;
+
+
+}
+
+
+
+.flex input::placeholder {
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+    color: rgba(53, 70, 87, 0.48);
+    padding-right: 0.5em;
+}
+
+textarea::placeholder {
+    text-align: left;
+}
+
+option[value=""][disabled] {
+    display: none;
+  }
+
+
+
+.flex {
+    padding-bottom: 1em;
+
+}
+
+.news span {
+    display: inline-block;
+    padding-bottom: 18px;
+
+
+}
+
+fieldset .padding {
+    display: inline-block;
+    padding-bottom: 16px;
+
+}
+.zip  {
+  width: 50%;
+}
+
+.news input:hover {
+    cursor: pointer;
+}
+
+input:focus,
+select:focus,
+option:focus,
+textarea:focus{
+  background-color:slategray;
+  color:white;
+}
+.news textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    font-size: 16px;
+    padding: 20px;;
+    border-radius: 4px;
+    border-style: none;
+    background-color: #19beb6;
+    color: #ffffff;
+}
+
+footer {
+    margin: 30px 0;
+    text-align: center;
+    color:rgba(53, 70, 87, .62);
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+
+html {
+    width: 65%;
+    max-width: 1024px;
+}
+.zip {
+  width: 25%;
+}
+.flex {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex label {
+    width: 25%;
+    padding-top: 18px;
+}
+
+.flex input,
+.flex select {
+    width: 75%;
+
+}
+
+
+
+}
